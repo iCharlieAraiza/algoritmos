@@ -1,0 +1,19 @@
+Algoritmo Edad
+	cont = 0
+	edadd = 0
+	sum = 0
+	Repetir
+		Escribir "Agrega una edad";
+		Leer edadd
+		Si edadd>=0 Entonces
+			sum = edadd + sum;
+			cont = cont +1
+		Fin Si
+	Hasta Que edadd <0
+	
+	Si cont == 0 Entonces
+		cont = 1
+	Fin Si
+	
+	Escribir sum / cont
+FinAlgoritmo
