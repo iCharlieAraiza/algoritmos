@@ -1,0 +1,36 @@
+SubProceso res <- nivel(nodo)
+	//Nodo izquierdo
+	Si arbol == null Entonces
+		res<- 0
+	//Nodo derecho
+	SiNo
+		res<- 1+max(nivel(nodo),nivel(nodo))
+	Fin Si
+FinSubProceso
+
+SubProceso res <- contarNodos(nodo)
+	cont = 1
+	//nodo izquierdo
+	Si nodo <> null Entonces
+		cont = cont + contarNodos(arbol)
+	Fin Si
+	//nodo derecho
+	Si nodo<>null Entonces
+		cont = cont + contarNodos(arbol) 
+	Fin Si
+	res<-cont
+FinSubProceso
+
+SubProceso res<-max(a, b)
+	Si a<b Entonces
+		res<-b
+	SiNo
+		res<-a
+	Fin Si
+FinSubProceso
+
+proceso Contar
+	Si nivel(arbol) >=3 Entonces
+		Imprimir contarNodos(arbol)
+	Fin Si
+FinProceso
