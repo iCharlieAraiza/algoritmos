@@ -1,0 +1,11 @@
+Algoritmo area
+  radio = 0
+  Repetir
+    Escribir "Escribe el radio"
+    Leer radio
+    Si radio<0 Entonces
+      Escribir "Has agregado un valor no válido, vuelve a intentarlo"
+    Fin Si
+    Hasta Que radio >=0
+    Escribir 3.1416 * radio * radio
+FinAlgoritmo
